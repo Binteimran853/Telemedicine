@@ -1,0 +1,109 @@
+.doctors-section {
+    width: 95%;
+    margin: auto;
+    padding: 2px 0;
+    margin-top: 30px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.heading-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Individual Card */
+.grid-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.grid-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #f8f8f8;
+    padding: 10px;
+}
+
+/* Text Styling */
+.grid-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* View All Link */
+.view-all {
+    display: block;
+    font-size: 14px;
+    color: #000066;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 35px;
+    background: none;
+    border: none;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        gap: 10px;
+    }
+
+    .grid-item {
+        width: 100px;
+    }
+
+    .grid-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+}

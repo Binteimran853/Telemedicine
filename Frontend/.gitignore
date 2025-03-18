@@ -1,0 +1,20 @@
+# Dependencies (can be installed with npm install)
+node_modules/
+
+# OS Files (Unnecessary system files)
+.DS_Store
+
+# Build Output (Generated files)
+dist/
+build/
+
+# Cache Files (Not needed in GitHub)
+.eslintcache
+*.log
+
+# Editor Configurations (Optional, prevents sharing personal VS Code settings)
+.vscode/
+.idea/
+
+# If using Jest for testing (ignore coverage reports)
+coverage/

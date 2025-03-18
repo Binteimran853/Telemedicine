@@ -1,0 +1,111 @@
+/* Background Overlay */
+.doctor-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Container */
+.doctor-popup-content {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Popup Header */
+.doctor-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    padding-bottom: 10px;
+}
+
+/* Close Button */
+.doctor-popup-close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Search Box */
+.doctor-popup-search-box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+/* Doctor List */
+.doctor-popup-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+/* Doctor Cards */
+.doctor-popup-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.doctor-popup-card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor-popup-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f8f8f8;
+    padding: 8px;
+}
+
+.doctor-popup-info {
+    margin-top: 5px;
+}
+
+.doctor-popup-info p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Online Badge */
+.doctor-popup-online-badge {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 4px;
+    margin-top: 5px;
+}

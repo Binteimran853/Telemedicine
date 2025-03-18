@@ -1,0 +1,131 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.conditions-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 65%;
+}
+
+h2 {
+    color: #000066;
+    margin-bottom: -15px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.specialist-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.specialist-title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000066;
+    margin-bottom: 10px;
+}
+
+.specialist-title img {
+    width: 60px;
+    height:60px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.conditions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 15px;
+    padding: 10px;
+}
+
+.condition-item { /* Light grey background */
+    border: 1px solid #000066; /* Dark blue border */
+    color: #000066; /* Text color */
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.condition-item:hover {
+    background-color: #000066;
+    color: white;
+}
+
+.clickable-doctor{
+    cursor: pointer;
+}
+
+.right-sidebar {
+    width: 25.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.info-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.info-box h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000066;
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: #000066;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    font-weight: bold;
+}
