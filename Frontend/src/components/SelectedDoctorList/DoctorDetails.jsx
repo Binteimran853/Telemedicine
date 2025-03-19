@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Navigate, useNavigate } from "react-router-dom";
 import { fetchDoctors } from "../../api/SelectedDoctorList/DoctorListApi";
 import "./DoctorDetails.css";
 
 const DoctorDetails = () => {
+  const navigate=useNavigate();
   const { doctorId } = useParams();
   const [doctor, setDoctor] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -23,7 +24,9 @@ const DoctorDetails = () => {
 
     getDoctorDetails();
   }, [doctorId]);
-
+function videoCallingHandler(){
+navigate(`/video-calling/${doctorId}`)
+}
   if (loading) return <p>Loading...</p>;
   if (!doctor) return <p>Doctor not found!</p>;
 
@@ -79,7 +82,7 @@ const DoctorDetails = () => {
           <span className="available-time">{doctor.available_time}</span>
         </div>
 
-        <button className="book-btn">
+        <button className="book-btn" onClick={videoCallingHandler}>
           📹 Book Video Consultation
         </button>
       </div>

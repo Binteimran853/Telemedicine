@@ -16,7 +16,7 @@ import AdminDashboard from "./pages/Admin/AdminDashboard";
 import DoctorDashboard from "./pages/DoctorUsers/DoctorDashboard/DoctorDashboard";
 import PatientDashboard from "./pages/PatientUsers/PatientDashboard";
 import DoctorDetails from "./components/SelectedDoctorList/DoctorDetails";
-
+import VideoCalling from "./components/VideoCalling/VideoCalling.jsx"
 function App() {
   return (
     <Router>
@@ -36,6 +36,7 @@ function App() {
         <Route path="/patient-dashboard/:id" element={<PatientDashboard />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/doctor-profile/:doctorId" element={<DoctorDetails />} />
+        <Route path="/video-calling/:doctorId" element={<VideoCalling />} />
       </Routes>   
       <Footer />
     </Router>
