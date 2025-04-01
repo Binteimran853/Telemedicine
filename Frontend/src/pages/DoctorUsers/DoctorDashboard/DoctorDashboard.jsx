@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route, NavLink, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getDoctorById } from "../../../api/Authenthication/doctorAuth"; // Import API function

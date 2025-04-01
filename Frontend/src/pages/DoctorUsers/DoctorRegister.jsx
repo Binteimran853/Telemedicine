@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { applyAsDoctor } from "../../api/Authenthication/doctorAuth";
 import "../../components/Authenthication/auth.css";

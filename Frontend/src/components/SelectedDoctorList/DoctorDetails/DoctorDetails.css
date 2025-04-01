@@ -1,0 +1,276 @@
+/* DoctorDetails.css */
+
+.doctor-details-container {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  gap: 20px;
+}
+
+.doctor-details-left-container{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  align-items: center;
+}
+
+.doctor-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+}
+
+.doctor-profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 3px solid #ffd700;
+}
+
+.doctor-info h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.specialization, .degree, .experience, .wait-time, .rating {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* nnnnnnneww */
+.doctor-header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px; /* Increased padding */
+  width: 90%; /* Slightly wider */
+  border-bottom: 1px solid #000666;
+}
+
+.doctor-profile-image {
+  width: 120px; /* Increased size */
+  height: 120px; /* Increased size */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #FF9E15; /* Slightly thicker border */
+}
+
+.doctor-info {
+  margin-left: 20px; /* More spacing */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.doctor-info h1 {
+  font-size: 26px; /* Bigger font */
+  font-weight: bold;
+  margin: 0;
+  color: #222;
+}
+
+.specialization,
+.degree {
+  font-size: 16px; /* Increased size */
+  color: #666;
+  margin: 5px 0;
+}
+
+.doctor-stats {
+  display: flex;
+  align-items: center;
+  margin-top: 12px; /* More spacing */
+  margin-left: -10px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 15px; /* More spacing between stats */
+  gap: 7px;
+}
+
+.stat-item span {
+  font-size: 14px; /* Bigger text */
+  color: #777;
+}
+
+.stat-item strong {
+  font-size: 18px; /* Bolder and larger */
+  color: #222;
+  font-weight: bold;
+}
+
+.stat-separator {
+  width: 2px; /* Slightly thicker */
+  height: 25px; /* Taller */
+  background-color: #ddd;
+}
+
+/* reviews-section  */
+.reviews-section {
+  margin-top: 20px;
+  padding: 20px;
+  width: 95%;
+}
+
+.rating-summary {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.overall-rating {
+  font-size: 24px;
+  font-weight: bold;
+  background: #000;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.rating-bars p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.review {
+  margin-top: 15px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.review-text {
+  font-style: italic;
+}
+
+.reviewer {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.read-reviews-btn {
+  margin-top: 10px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-reviews-btn:hover {
+  background: #333;
+}
+
+
+.doctor-details-right-container{
+width: 30%;
+display: flex;
+flex-direction: column;
+}
+/* Consultation Box */
+.consultation-box {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+}
+
+.consultation-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.discount-badge {
+background: #eef0ff;
+color: #001f80;
+padding: 5px 10px;
+font-size: 12px;
+border-radius: 5px;
+font-weight: bold;
+border: 1px solid #001f80;
+}
+
+.fee, .address {
+font-size: 14px;
+color: #555;
+margin: 8px 0;
+}
+
+.availability-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #f0fff0;
+padding: 8px;
+border-radius: 5px;
+font-size: 14px;
+color: green;
+font-weight: bold;
+}
+
+.available-time {
+font-size: 14px;
+color: #333;
+}
+
+.book-btn {
+background: #001f80;
+color: white;
+border: none;
+padding: 12px;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.book-btn:hover {
+background: #000d50;
+}
+
+/* Consultation Benefits */
+.consultation-benefits{
+margin-left: 30px;
+}
+.consultation-benefits ul {
+list-style: none;
+padding: 0;
+margin-top: 15px;
+}
+
+.consultation-benefits li {
+font-size: 14px;
+margin: 5px 0;
+display: flex;
+align-items: center;
+color: #555;
+}
+
+.consultation-benefits li::before {
+content: "✔";
+color: green;
+margin-right: 5px;
+}

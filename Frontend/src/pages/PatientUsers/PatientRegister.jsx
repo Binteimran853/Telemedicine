@@ -1,7 +1,6 @@
-import React from "react";
 import { sendVerificationCode } from "../../api/Authenthication/auth";
 import { useNavigate } from "react-router-dom";
-import AuthForm from "../../components/Authenthication/AuthForm";
+import AuthForm from "../../components/Authenthication/PatientAuthForm";
 
 const Register = () => {
     const navigate = useNavigate();

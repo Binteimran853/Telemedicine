@@ -1,0 +1,134 @@
+.doctor-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.doctor-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.doctor-details {
+  flex: 1;
+}
+
+.doctor-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.specialization,
+.qualification {
+  font-size: 14px;
+  color: #555;
+  margin: 3px 0;
+}
+
+.experience-rating {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.platinum-badge {
+  background: linear-gradient(to right, #c79820, #f5a623);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 220px;
+}
+
+.pmc-badge {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 8px;
+  background: #e7e7e7;
+  padding: 2px;
+}
+
+.consultation {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.available {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fee {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.discount-button {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: #5022cf;
+  color: white;
+}
+
+.doctor-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.video-btn {
+  background: white;
+  border: 1px solid #002868;
+  color: #002868;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-btn {
+  background: #f5a623;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,9 +1,8 @@
-import React from "react";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { login } from "../../api/Authenthication/auth.js";
 import { AuthContext } from "../../context/AuthContext.jsx";
-import AuthForm from "../../components/Authenthication/AuthForm.jsx"; // Import AuthForm
+import AuthForm from "../../components/Authenthication/PatientAuthForm.jsx"; // Import AuthForm
 
 const Login = () => {
     const { login: saveUser } = useContext(AuthContext); // Get login function from context
