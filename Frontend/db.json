@@ -24,7 +24,15 @@
       "token": "mocked-jwt-token"
     }
   ],
-  "pendingVerifications": [],
+  "pendingVerifications": [
+    {
+      "id": "56de",
+      "email": "aqsaimran341@gmail.com",
+      "name": "Azaan Imran",
+      "password": "123456",
+      "verificationCode": "269448"
+    }
+  ],
   "doctor_applications": [
     {
       "id": "976b",

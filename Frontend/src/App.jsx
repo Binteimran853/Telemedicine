@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import "./App.css"
 import Home from "./pages/Home";
 import Login from "./pages/PatientUsers/PatientLogin.jsx";
 import Register from "./pages/PatientUsers/PatientRegister.jsx";
@@ -15,9 +15,14 @@ import DoctorLogin from "./pages/DoctorUsers/DoctorLogin.jsx";
 import AdminDashboard from "./pages/Admin/AdminDashboard";
 import DoctorDashboard from "./pages/DoctorUsers/DoctorDashboard/DoctorDashboard";
 import PatientDashboard from "./pages/PatientUsers/PatientDashboard";
+<<<<<<< HEAD
 import DoctorDetails from "./components/SelectedDoctorList/DoctorDetails/DoctorDetails.jsx";
 import AppointmentBooking from "./components/Appointment/AppointmentBooking.jsx";
 import { cleanupAvailability } from "./api/DoctorDashboard/CalendarAPI";
+=======
+import DoctorDetails from "./components/SelectedDoctorList/DoctorDetails";
+import VideoCalling from "./pages/VideoCalling/VideoCalling.jsx";
+>>>>>>> ef32f63 (Deploying Vite React project to Vercel)
 
 function App() {
   useEffect(() => {
@@ -41,7 +46,11 @@ function App() {
         <Route path="/patient-dashboard/:id" element={<PatientDashboard />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/doctor-profile/:doctorId" element={<DoctorDetails />} />
+<<<<<<< HEAD
         <Route path="/book-appointment/:doctorId" element={<AppointmentBooking />} />
+=======
+        <Route path="/video-calling/:doctorId" element={<VideoCalling/>} />
+>>>>>>> ef32f63 (Deploying Vite React project to Vercel)
       </Routes>   
       <Footer />
     </Router>

@@ -1,0 +1,35 @@
+.video-calling-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+
+    position: relative;
+    /* Use absolute positioning */
+
+    left: 50%;
+    /* Move it to the middle */
+    transform: translateX(-50%);
+    /* Adjust for centering */
+}
+.video-calling-form  lable > h1{
+    margin:5% auto;
+    color: rgb(253, 113, 113);
+}
+.video-calling-form button {
+    
+    position: relative;
+    align-self: flex-start; /* Align button to the left */
+    margin: 5% 0; /* Adjust spacing without centering */
+    padding: 1%;
+    background: rgb(72, 72, 255);
+    color: white;
+    border: 5px solid transparent;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.video-calling-form input{
+    padding: 2% 5%;
+    font-size: 20px;
+}

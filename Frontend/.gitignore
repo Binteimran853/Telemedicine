@@ -40,7 +40,6 @@ venv/
 db.sqlite3
 media/
 staticfiles/
-*.log
 local_settings.py
 
 # Jupyter notebooks (if any)
@@ -49,3 +48,9 @@ local_settings.py
 # MongoDB data (if storing locally)
 dump/
 data/
+
+# If using Jest for testing (ignore coverage reports)
+coverage/
+
+# Vercel deployment
+.vercel
