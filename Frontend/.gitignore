@@ -54,3 +54,4 @@ coverage/
 
 # Vercel deployment
 .vercel
+.DS_Store
