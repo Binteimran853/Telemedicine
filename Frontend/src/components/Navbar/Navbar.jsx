@@ -38,7 +38,7 @@ const Navbar = () => {
             <>
               <li>
                 <button className="user">
-                  {role === "doctor" ? `Hi, Dr. ${user.name}` : `Hi, ${user.name}`}
+                  {role === "doctor" ? `Hi, ${user.name}` : `Hi, ${user.name}`}
                 </button>
               </li>
               

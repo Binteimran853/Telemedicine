@@ -55,7 +55,7 @@ const SearchModal = ({ isOpen, onClose }) => {
                     <div>
                         <input
                             type="text"
-                            placeholder="Select location"
+                            placeholder="Select location if not Gujranwala"
                             value={locationQuery}
                             onFocus={() => setSearchType("location")}
                             onChange={(e) => setLocationQuery(e.target.value)}
